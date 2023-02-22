@@ -18,7 +18,6 @@ function validateForm (){
         return;
     }
 
-    
     if (email.trim() === '' || !emailConditions.test(email)) {
         console.log('Form submission failed');
         return;
