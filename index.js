@@ -60,7 +60,6 @@ for (let i=0; i<products.length; i++){
 //Create a function searchProducts that takes a string parameter query and returns an array of products that match the query. The function should search for products that contain the query in their name, and should be case-insensitive
 function searchProducts(query){
     return products.filter(product => product.toLowerCase().includes(query.toLowerCase()));
-
 }
 
 //Create an input field on the web page that allows the user to enter a search query. Use an event listener to call the searchProducts function whenever the user types in the input field
