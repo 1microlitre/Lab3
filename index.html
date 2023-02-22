@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    #product-list {
+        list-style: none;
+    }
+    h2 {
+        font-size: 20px;
+        padding-top: 75px;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +16,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Lab #3 | Kyungmin Kim</h1>
+    <h2>Create New Account</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="username" name="username" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="email" name="email" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="password" name="password" required>
+  
+      <button type="button" onclick="validateForm()">Submit</button>
+    </form>  
+
+    <h2>Search Product</h2>
+    <input type="text" id="search-input" placeholder="search for...">
+    <ul id="product-list">
+    </ul>
 </body>
+<script src="index.js"></script>
 </html>
